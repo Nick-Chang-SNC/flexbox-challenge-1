@@ -1,0 +1,111 @@
+/*
+////// For this challenge ///////
+
+- You will have to modify the HTML
+
+- You can add new classes in the HTML
+  if you need to
+
+// Requirements
+1. The headings in the first row must be
+   a different color
+2. The two .col at the bottom must go next
+   to one another
+3. The section at the bottom should have
+   a dark background color and a different
+   color of text
+4. I've removed the "gap" that I created,
+   so you'll have to add it back in
+
+   */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Element Selectors */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+/* Layout Containers */
+.container {
+  padding: 4em 3em;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  margin: .75em;
+}
+
+.col + .col {
+  margin-left: 1.2em;
+}
+
+/* Banner 1 Layout */
+.banner-1 {
+  background-color: #23424A;
+}
+
+.banner-1__text {
+  width: 60%;
+  color: white;
+}
+
+.banner-1__title {
+  color: #38CFD9;
+}
+
+.banner-1__btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #38CFD9;
+    border-radius: 100px;
+    margin-top: 1em;
+    padding: .75em 1.25em;
+}
+
+.banner-1__btn:hover,
+.banner-1__btn:focus {
+  opacity: .75;
+}
+
+/* Banner 2 Layout */
+.banner-2__text {
+  text-align: center;
+}
+
+.banner-2__title {
+  color: #87629A;
+}
+
+/* Banner 3 Layout */
+.banner-3 {
+  background-color: #136C72;
+}
+
+.banner-3__text {
+  color: white;
+  text-align: center;
+}
